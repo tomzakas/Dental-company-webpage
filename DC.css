@@ -1,0 +1,249 @@
+body {
+    background: linear-gradient(to right, #fafafa, #f2f2f2);
+}
+
+/*header nustatymai*/ 
+
+#name {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 3em;
+    color: #ff5c33;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;   
+}
+
+#address {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 1em;
+    color: #ff5c33;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+header {
+    display: block;
+    height: 180px; 
+    max-width: 100%;
+    background-color: green;
+    border-color: blue;
+    border-width: 5px;
+    margin: 2px;
+    background-image: url("../DC_photos/teeth.jpeg");
+}
+
+/*horizontalus navigation bar*/  
+
+nav {
+    padding: 0px 100px 0px 100px; 
+}
+  
+ul {
+    list-style: none; /*panaikina rutuliukus pries teksta*/
+}
+
+nav li {
+    border: 0px solid black;/*border aplink kiekviena menu mygtuka*/
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;/*tarpas tarp mygtuku*/
+    display: inline-block; /*padaro horizontalu menu*/
+} 
+
+li a {
+    text-decoration: none;
+    margin: 2px;
+    padding: 6px;/*tvarkomas tekstas mygtukuose*/
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 1em; /*teksto dydis*/
+    letter-spacing: 1px;
+    word-spacing: 2px;   
+}
+
+li a:link {
+    background-color: #a1caf1; /* taikomas stilius unvisited link'ams */
+    color: black;
+    border-radius: 15px;
+}
+       
+li a:visited {
+    background-color: dodgerblue; /* taikomas stilius visited link'ams */
+    color: white;
+}
+ 
+li a:active {
+    background-color: lightgray; /* taikomas stilius selected link'ams */
+    color: black;
+}
+ 
+li a:hover, li a:focus {
+    background-color: #ff5c33; /* taikomas stilius mouse over link'ams ir paryskinamo uzvedus pele focus link'ams */
+    color: white;
+}
+
+/*animation*/
+#anime {
+
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes anime { 100% { -webkit-transform: rotate(360deg); } }
+
+    
+#main_img {
+    border: 1px solid #ff5c33;
+    opacity: 0.4;
+    margin: auto;
+    width: 600px;    
+}
+
+/*teksto blokai*/
+
+.main_sec {
+    height: 270px; 
+    width: 23%;
+    margin: 5px;
+    padding: 10px;
+    align-items: center;
+    background: -webkit-linear-gradient(top left, whitesmoke, #aec6cf);
+    background: -o-linear-gradient(top left, whitesmoke, #aec6cf);
+    background: linear-gradient(to bottom right, whitesmoke, #aec6cf);
+    border-radius: 5% 15%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    align-items: center;
+    box-sizing: border-box; /*kontroliuoja div dydzius*/
+    box-shadow: 5px 5px slategrey;
+}
+
+.main_sec h4 {
+    text-align: center;
+}
+
+.sec_links {
+    background-color: black;
+    color: white;
+    border: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 40px 40px;
+    display: inline;
+}
+
+/*pagrindinis tekstas*/
+
+#main_section {
+    margin-left: 190px;
+    padding-left: 150px;
+    padding-right: 200px;
+}
+
+/*form*/
+
+#first_footer {
+    height: 400px; 
+    max-width: 250px;
+    background-color: #b3d5fa;
+    border-color: blue;
+    border-width: 2px;
+    margin: 2px;
+}
+
+.label {
+    height: 30px;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+}
+ 
+input[type=text]:focus {
+    background-color: lightblue;
+}
+ 
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+ 
+label {
+    margin: 0px;
+    padding: 20px;
+}
+ 
+#question {
+    font-family: verdana;
+    font-size: 1.5em; 
+    padding: 0px 30px;
+    margin: 2px;  
+}
+
+
+#second_footer {
+    height: 50px; 
+    max-width: 100%;
+    background-color: #b3d5fa;
+    border-color: blue;
+    border-width: 2px;
+    margin: 2px;
+}
+
+#second_footer li {
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+    height: 20px;
+    width: 15px;  
+}
+
+#third_footer {
+    height: 25px; 
+    max-width: 100%;
+    background-color: #b3d5fa;
+    border-color: blue;
+    border-width: 2px;
+    margin: 2px;
+}
+
+#third_footer p {
+    text-decoration: none;
+    margin: 2px;
+    padding-top: 5px;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 0.8em; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
